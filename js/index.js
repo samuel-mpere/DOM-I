@@ -140,8 +140,9 @@ footerContentEdit.textContent = siteContent['footer']['copyright'];
 
 //nav styling 
 
-navStyle = document.querySelectorAll('a');
-navStyle.style.color = 'green';
+navStyle.forEach(a => {
+  a.style.color = 'green';
+ })
 
 
 // append/ prepend to nav
@@ -156,7 +157,7 @@ otherNavElement.textContent = 'Enjoy';
 
 
 
-let nav = document.querySelector('nav');
+const nav = document.querySelector('nav');
 
 nav.prepend(newNavElement);
 nav.appendChild(otherNavElement);
