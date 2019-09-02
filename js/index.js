@@ -43,7 +43,9 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 //nav edit
 
+
 let navEdit = document.querySelectorAll('a');
+
 
 navEdit[0].textContent = siteContent["nav"]["nav-item-1"];
 
@@ -55,10 +57,13 @@ navEdit[3].textContent = siteContent["nav"]["nav-item-4"];
 
 
 
-
 navEdit[4].textContent = siteContent["nav"]["nav-item-5"];
 
 navEdit[5].textContent = siteContent["nav"]["nav-item-6"];
+
+//change nav text to green 
+
+// navEdit.style.color = 'green';
 
 
 //header edit 
@@ -133,3 +138,25 @@ let footerContentEdit = document.querySelector('footer p');
 
 footerContentEdit.textContent = siteContent['footer']['copyright'];
 
+//nav styling 
+
+navStyle = document.querySelectorAll('a');
+navStyle.style.color = 'green';
+
+
+// append/ prepend to nav
+
+let newNavElement = document.createElement('a');
+let otherNavElement = document.createElement('a');
+
+
+newNavElement.textContent = 'Welcome';
+otherNavElement.textContent = 'Enjoy';
+
+
+
+
+let nav = document.querySelector('nav');
+
+nav.prepend(newNavElement);
+nav.appendChild(otherNavElement);
