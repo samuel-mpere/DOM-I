@@ -40,3 +40,59 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+//nav edit
+
+let navEdit = document.querySelectorAll('a');
+
+navEdit[0].textContent = siteContent["nav"]["nav-item-1"];
+
+navEdit[1].textContent = siteContent["nav"]["nav-item-2"];
+
+navEdit[2].textContent = siteContent["nav"]["nav-item-3"];
+
+navEdit[3].textContent = siteContent["nav"]["nav-item-4"];
+
+navEdit[4].textContent = siteContent["nav"]["nav-item-5"];
+
+navEdit[5].textContent = siteContent["nav"]["nav-item-6"];
+
+
+//section class cta 
+
+let ctaImgEdit = document.getElementById('cta-img');
+ctaImgEdit.setAttribute('src', siteContent['cta']['img-src']);
+
+let ctaH1Edit = document.getElementsByTagName('h1');
+
+ctaH1Edit[0].textContent = siteContent.cta.h1;
+
+let ctaButtonEdit = document.getElementsByTagName('button');
+ctaButtonEdit[0].textContent = siteContent.cta.button;
+
+
+//section main content edit 
+
+let paragraphContentEdit = document.getElementsByTagName('h4');
+
+let textContentEdit = document.querySelectorAll('.text-content p');
+
+//top-content edit 
+
+paragraphContentEdit[0].textContent = siteContent['main-content']['features-h4'];
+
+paragraphContentEdit[1].textContent = siteContent['main-content']['about-h4'];
+
+
+textContentEdit[0].textContent = siteContent['main-content']['features-content'];
+
+textContentEdit[1].textContent = siteContent['main-content']['about-content'];
+
+//middle image edit
+
+let middleLogo = document.getElementById('middle-img');
+
+middleLogo.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
+
+//bottom-content-edit
+
